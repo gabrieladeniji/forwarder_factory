@@ -1,4 +1,4 @@
-# A solidity smart contract to process celo, cUSD, cEUR payment at scale
+# A solidity smart contract to process celo, cUSD and cEUR payment at scale
 
 ## Forwarder Factory + Create2 with Truffle
 
