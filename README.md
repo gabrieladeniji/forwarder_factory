@@ -1,7 +1,6 @@
-# Forwarder Factory + Create2 with Truffle
+# A solidity smart contract to process celo, cUSD, cEUR payment at scale
 
-A non-custodial solidity smart contract to process celo, cUSD, cEUR payment at scale
-------------------------------------------------------------------------------------
+## Forwarder Factory + Create2 with Truffle
 
 `Forwarder`: Create a smart contracts that can accept funds as if they 
 were ordinary accounts, with the sole functionality of forwarding the 
