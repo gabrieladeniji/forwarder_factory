@@ -1,0 +1,22 @@
+{
+  "name": "forwarder_factory",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "web3": "^1.5.2",
+    "dotenv": "^8.2.0",
+    "@celo/contractkit": "^1.2.4",
+    "@truffle/contract": "^4.3.34",
+    "@openzeppelin/contracts": "^4.3.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
