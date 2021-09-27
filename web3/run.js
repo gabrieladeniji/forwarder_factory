@@ -64,20 +64,14 @@ const abi = [
          }
       ],
       "name": "initForwarder",
-      "outputs": [
-         {
-            "internalType": "contract Forwarder",
-            "name": "_forwarder",
-            "type": "address"
-         }
-      ],
+      "outputs": [],
       "stateMutability": "nonpayable",
       "type": "function"
    }
 ];
 const dst1 = '0x55579425171edC37da00D2930870873D0eeBCB02';
 // const dst2 = '0x0D572D6624852834894f529E93D3d35545e5FE48';
-const contractAddress = '0xA619DEBDf46730251DAC4a18106aF61e59Ed2300';
+const contractAddress = '0x34802C875c59E687F657dF1555d67bF442c9460A';
 
 kit.connection.addAccount(process.env.ALFAJORES_PRIVATE_KEY);
 const account = kit.web3.eth.accounts.privateKeyToAccount(process.env.ALFAJORES_PRIVATE_KEY);

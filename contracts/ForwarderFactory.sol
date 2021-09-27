@@ -25,17 +25,21 @@ contract ForwarderFactory {
         return address(uint160(uint256(hash)));
     }
 
-    function initForwarder(address payable destination, uint256 _salt) public returns (Forwarder _forwarder) {
+    function initForwarder(address payable destination, uint256 _salt) public {
+        address _address;
         bytes memory bytecode = getByteCode(destination);
         assembly {
-            _forwarder := create2(
+            _address := create2(
                 callvalue(),
                 add(bytecode, 0x20),
                 mload(bytecode),
                 _salt
             )
+            if iszero(extcodesize(_address)) {
+                revert(0, 0)
+            }
         }
-        emit Deployed(address(_forwarder), _salt);
+        emit Deployed(_address, _salt);
     }
 
 }
